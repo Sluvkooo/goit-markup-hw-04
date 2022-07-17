@@ -337,7 +337,6 @@ img {
 
 .team .social-list {
   display: flex;
-  padding: 0px 32px;
   margin-top: 16px;
 }
 
@@ -352,7 +351,7 @@ img {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  fill: #AFB1B8;
+  fill: #afb1b8;
 }
 
 .team .social-bg:hover,
@@ -361,6 +360,48 @@ img {
 .team .social-bg:focus .social-icon {
   background-color: var(--accent-color);
   fill: #fff;
+}
+
+/* постоянные клиенты */
+
+.clients .title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  color: var(--primary-text-color);
+}
+
+.clients .list {
+  display: flex;
+}
+
+.clients .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-icon {
+  fill: #afb1b8;
+}
+
+.clients-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-link:hover,
+.clients-link:focus,
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* footer */
@@ -419,14 +460,14 @@ img {
 }
 
 .social-title {
-margin-bottom: 20px;
+  margin-bottom: 20px;
 
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 
-color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer-social .social-list {
@@ -453,8 +494,6 @@ color: #FFFFFF;
   background-color: var(--accent-color);
 }
 
-
-
 /* portfolio.html */
 
 /* filter buttons */
@@ -463,6 +502,12 @@ color: #FFFFFF;
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
+}
+
+.button-list .item:hover,
+.button-list .item:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-list .item:not(:last-child) {
@@ -506,8 +551,14 @@ color: #FFFFFF;
   margin-top: var(--card-set-gap);
 }
 
+.work-list .item:hover,
+.work-list .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .card-content {
-  /* padding: 20px 24px; */
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
 
